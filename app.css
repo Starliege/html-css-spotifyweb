@@ -121,7 +121,7 @@ header {
 /* sinistra */
 #player {
     height: 100px;
-    width: 100%;
+    width: 100vw;
     padding: 25px 10px;
     position: fixed;
     bottom: 0;
