@@ -1,0 +1,267 @@
+/* GENERALI */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+  }
+  
+  ul {
+    list-style: none;
+  }
+  
+  a {
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  #main-container {
+    display: flex;
+    height: calc(100vh - 100px);
+    overflow: hidden;
+  }
+  
+  /* SMARTPHONE */
+
+/* HEADER LATERALE */
+
+header {
+    width: 50px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #000;
+    text-align: center;
+    transition: width 0.5s;
+  }
+  
+  header a {
+    color: #808080;
+  }
+  
+  header a:hover {
+    color: #FFF;
+  }
+  
+  header span, #logo, header .playlist, header h5 {
+    display: none;
+  }
+  
+  #logo-small {
+    margin-bottom: 10px;
+  }
+  
+  header .main-menu .icon {
+    height: 35px;
+    filter: brightness(60%);
+  }
+  
+  header .main-menu .icon:hover {
+    filter: brightness(100%);
+  }
+  
+  header .main-menu .active .icon {
+    filter: brightness(75%);
+  }
+  
+  header .main-menu a.active {
+    color: #BFBFBF;
+  }
+  
+  header .main-menu a.active:hover {
+    color: #FFF;
+  }
+  
+  header .main-menu .home {
+    background: url(img/home.svg) no-repeat center;
+  }
+  
+  header .main-menu .search {
+    background: url(img/search.svg) no-repeat center;
+  }
+  
+  header .main-menu .libreria {
+    background: url(img/libreria.svg) no-repeat center;
+  }
+  
+  header .download {
+    font-size: 2rem;
+    color: #FFF;
+    margin-bottom: 15px;
+  }
+  
+  header .download a i {
+    font-size: 0.5rem;
+    background-color: transparent;
+    border: 1px #808080 solid;
+    border-radius: 50%;
+    padding: 3px;
+  }
+  
+  header .download a:hover i {
+    border-color: #FFF;
+  }
+  
+  header .user .avatar {
+    text-align: center;
+    height: 30px;
+    width: 30px;
+    background: #808080 url(img/profile.svg) center;
+    border-radius: 50%;
+  }
+
+  /* TABLET */
+@media screen and (min-width: 550px) {
+
+    /* HEADER */
+
+    header {
+      width: 200px;
+      padding: 20px;
+      text-align: left;
+    }
+  
+    header #logo {
+      display: block;
+      height: 45px;
+      margin-bottom: 20px;
+    }
+  
+    #logo-small {
+      display: none;
+    }
+  
+    header span {
+      display: inline-block;
+    }
+  
+    header .main-menu {
+      margin-bottom: 30px;
+    }
+  
+    header .main-menu li {
+      margin: 10px 0;
+    }
+  
+    header .main-menu .active {
+      border-left: 3px solid #0F0;
+      margin-left: -20px;
+      padding-left: 20px;
+    }
+  
+    header .main-menu a {
+      display: block;
+      height: 100%;
+      width: 100%;
+      display: flex;
+      align-items: center;
+    }
+  
+    header .main-menu .icon {
+      display: inline-block;
+      height: 30px;
+      width: 30px;
+      margin-right: 5px;
+    }
+  
+    header .main-menu a:hover .icon {
+      filter: brightness(100%);
+    }
+  
+    header h5 {
+      display: block;
+      font-size: 0.9rem;
+      color: #FFF;
+      text-transform: uppercase;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+  
+    header .playlist {
+      display: block;
+    }
+  
+    header .playlist a {
+      display: block;
+      height: 100%;
+      width: 100%;
+      display: flex;
+      align-items: center;
+    }
+  
+    header .playlist li {
+      margin: 15px 0;
+    }
+  
+    header .playlist .fa-plus-square {
+      display: inline-block;
+      font-size: 3rem;
+      margin-right: 10px;
+    }
+  
+    header .download a {
+      display: flex;
+      align-items: center;
+      font-size: 0.8rem;
+    }
+  
+    header .download i {
+      margin-right: 10px;
+    }
+  
+    header .user {
+      border-top: 1px solid #717171;
+      padding-top: 15px;
+    }
+  
+    header .user a {
+      display: flex;
+      align-items: center;
+      color: #FFF;
+      font-size: 1.1rem;
+    }
+  
+    header .avatar {
+      margin-right: 10px;
+    }
+  
+}
+
+/* DESKTOP 1 */
+@media screen and (min-width: 900px) {
+
+    /* Cover */
+    #home .row > div {
+      gap: 25px;
+    }
+  
+    #home .row > div a {
+      max-width: 30%;
+    }
+  
+    /* Player */
+    #player .song > div:nth-child(3) {
+      margin-left: 20px;
+      flex-direction: row;
+      gap: 20px;
+    }
+  }
+  
+  /* DESKTOP 2 */
+  @media screen and (min-width: 1200px) {
+  
+    /* Cover */
+    #home .row > div {
+      justify-content: flex-start;
+    }
+  
+    #home .row > div a {
+      max-width: 160px;
+    }
+  }
