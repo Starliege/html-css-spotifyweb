@@ -2,108 +2,221 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Spotify</title>
-    <link rel="stylesheet" href="app.css">
-    <script src="https://kit.fontawesome.com/c6687b9fca.js" crossorigin="anonymous"></script>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Spotify</title>
+  <link rel="stylesheet" href="app.css">
+  <script src="https://kit.fontawesome.com/c6687b9fca.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
-    <div id="main-container">
-        <header>
-            <div>
-                <a href="#"><img src="img/logo.svg" alt="Spotify" id="logo"></a>
-                <a href="#"><img src="img/logo-small.svg" alt="Spotify" id="logo-small"></a>
-                <nav>
-                    <ul class="main-menu">
-                        <li><a href="#" class="active">
-                                <div class="icon home"></div> <span>Home</span>
-                            </a></li>
-                        <li><a href="#">
-                                <div class="icon search"></div> <span>Cerca</span>
-                            </a></li>
-                        <li><a href="#">
-                                <div class="icon libreria"></div> <span>La tua libreria</span>
-                            </a></li>
+  <div id="main-container">
+    <header>
+      <div>
+        <a href="#"><img src="img/logo.svg" alt="Spotify" id="logo"></a>
+        <a href="#"><img src="img/logo-small.svg" alt="Spotify" id="logo-small"></a>
+        <nav>
+          <ul class="main-menu">
+            <li><a href="#" class="active">
+                <div class="icon home"></div> <span>Home</span>
+              </a></li>
+            <li><a href="#">
+                <div class="icon search"></div> <span>Cerca</span>
+              </a></li>
+            <li><a href="#">
+                <div class="icon libreria"></div> <span>La tua libreria</span>
+              </a></li>
 
-                    </ul>
+          </ul>
 
-                    <h5>Playlist</h5>
-                    <ul class="playlist">
-                        <li><a href="#"><i class="fas fa-plus-square"></i> <span>Crea Playlist</span></a></li>
-                        <li><a href="#">Nome Playlist</a></li>
-                        <li><a href="#">Nome Playlist</a></li>
-                        <li><a href="#">Nome Playlist</a></li>
-                        <li><a href="#">Nome Playlist</a></li>
-                        <li><a href="#">Nome Playlist</a></li>
-                        <li><a href="#">Nome Playlist</a></li>
-                        <li><a href="#">Nome Playlist</a></li>
-                    </ul>
-                </nav>
-            </div>
+          <h5>Playlist</h5>
+          <ul class="playlist">
+            <li><a href="#"><i class="fas fa-plus-square"></i> <span>Crea Playlist</span></a></li>
+            <li><a href="#">Nome Playlist</a></li>
+            <li><a href="#">Nome Playlist</a></li>
+            <li><a href="#">Nome Playlist</a></li>
+            <li><a href="#">Nome Playlist</a></li>
+            <li><a href="#">Nome Playlist</a></li>
+            <li><a href="#">Nome Playlist</a></li>
+            <li><a href="#">Nome Playlist</a></li>
+          </ul>
+        </nav>
+      </div>
 
-            <div>
-                <div class="download">
-                    <a href="#"><i class="fas fa-arrow-down"></i> <span>Installa app</span></a>
-                </div>
-                <div class="user">
-                    <a href="#">
-                        <div class="avatar"></div> <span>John Doe</span>
-                    </a>
-                </div>
-            </div>
-        </header>
-        <section id="player">
-            <div class="song">
-              <img src="img/sinister.jpeg" alt="Album Cover" class="album-cover">
-              <div>
-                <div class="song-title"><a href="#">Sinister</a></div>
-                <div class="artist"><a href="#">Nome artista</a></div>
+      <div>
+        <div class="download">
+          <a href="#"><i class="fas fa-arrow-down"></i> <span>Installa app</span></a>
+        </div>
+        <div class="user">
+          <a href="#">
+            <div class="avatar"></div> <span>John Doe</span>
+          </a>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section id="upgrade">
+        <a href="#">Effettua l'upgrade</a>
+      </section>
+
+      <section id="home">
+        <nav>
+          <ul class="main-menu">
+            <li><a href="#" class="active">In evidenza</a></li>
+            <li><a href="#">Podcast</a></li>
+            <li><a href="#">Classifiche</a></li>
+            <li><a href="#">Generi e mood</a></li>
+            <li><a href="#">Nuove uscite</a></li>
+            <li><a href="#">Scopri</a></li>
+          </ul>
+        </nav>
+
+        <div class="row">
+          <h2>Recently played</h2>
+          <div>
+            <a href="#">
+              <div class="cover heavy-metal">
+                <i class="far fa-play-circle"></i>
               </div>
-              <div>
-                <a href="#"><i class="far fa-heart"></i></a>
-                <a href="#"><i class="far fa-folder"></i></a>
+              <div class="titolo">Heavy Metal</div>
+              <div class="sottotitolo">Sottotitolo</div>
+            </a>
+
+            <a href="#">
+              <div class="cover stranger">
+                <i class="far fa-play-circle"></i>
               </div>
-            </div>
-        
-            <div>
-              <div class="controlli-center">
-                <div>
-                  <a href="#"><i class="fas fa-random"></i></a>
-                  <a href="#"><i class="fas fa-step-backward"></i></a>
-                  <a href="#"><i class="far fa-play-circle"></i></a>
-                  <a href="#"><i class="fas fa-step-forward"></i></a>
-                  <a href="#"><i class="fas fa-redo"></i></a>
-                </div>
-        
-                <div class="timer">
-                  <span>0:25</span>
-                  <div class="barra">
-                    <div class="current">
-                      <i class="fas fa-circle"></i>
-                    </div>
-                  </div>
-                  <span>4:35</span>
-                </div>
-              </div> 
-            </div>
-        
-            <div class="controlli-right">
-              <a href="#"><i class="fas fa-list-ul"></i></a>
-              <a href="#"><i class="fas fa-desktop"></i></a>
-              <a href="#"><i class="fas fa-volume-up"></i></a>
-              <div id="audio">
-                <div class="barra">
-                  <div class="current">
-                    <i class="fas fa-circle"></i>
-                  </div>
-                </div>
+              <div class="titolo">Stranger Things, Vol. 1 (a Netflix Original Series Soundtrack)</div>
+              <div class="sottotitolo">Kyle Dixon & Michael Stein</div>
+            </a>
+
+            <a href="#">
+              <div class="cover a-quiet-place">
+                <i class="far fa-play-circle"></i>
               </div>
-            </div>
-          </section>
+              <div class="titolo">A quiet place</div>
+              <div class="sottotitolo">Sottotitolo</div>
+            </a>
+
+            <a href="#">
+              <div class="cover split">
+                <i class="far fa-play-circle"></i>
+              </div>
+              <div class="titolo">Split</div>
+              <div class="sottotitolo">Sottotitolo</div>
+            </a>
+
+            <a href="#">
+              <div class="cover a-cure-for-wellness">
+                <i class="far fa-play-circle"></i>
+              </div>
+              <div class="titolo">A cure for wellness</div>
+              <div class="sottotitolo">Sottotitolo</div>
+            </a>
+
+            <a href="#">
+              <div class="cover sinister">
+                <i class="far fa-play-circle"></i>
+              </div>
+              <div class="titolo">Sinister</div>
+              <div class="sottotitolo">Sottotitolo</div>
+            </a>
+          </div>
+        </div>
+
+        <div class="row">
+          <h2>Creato per John Doe</h2>
+          <h4>Più ascolti, più accurati saranno i suggerimenti.</h4>
+          <div>
+            <a href="#">
+              <div class="cover relase-radar">
+                <i class="far fa-play-circle"></i>
+              </div>
+              <div class="titolo">Release Radar</div>
+            </a>
+
+            <a href="#">
+              <div class="cover daily-mix-1">
+                <i class="far fa-play-circle"></i>
+              </div>
+              <div class="titolo">Daily Mix 1</div>
+            </a>
+          </div>
+        </div>
+
+        <div class="row artisti">
+          <h2>Artisti più popolari</h2>
+          <h4>Più ascolti, più accurati saranno i suggerimenti.</h4>
+          <div>
+            <a href="#">
+              <div class="cover lana-del-rey">
+                <i class="far fa-play-circle"></i>
+              </div>
+              <div class="titolo">Lana Del Rey</div>
+            </a>
+
+            <a href="#">
+              <div class="cover ludovico-einaudi">
+                <i class="far fa-play-circle"></i>
+              </div>
+              <div class="titolo">Ludovico Einaudi</div>
+            </a>
+          </div>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <section id="player">
+    <div class="song">
+      <img src="img/sinister.jpeg" alt="Album Cover" class="album-cover">
+      <div>
+        <div class="song-title"><a href="#">Sinister</a></div>
+        <div class="artist"><a href="#">Nome artista</a></div>
+      </div>
+      <div>
+        <a href="#"><i class="far fa-heart"></i></a>
+        <a href="#"><i class="far fa-folder"></i></a>
+      </div>
     </div>
+
+    <div>
+      <div class="controlli-center">
+        <div>
+          <a href="#"><i class="fas fa-random"></i></a>
+          <a href="#"><i class="fas fa-step-backward"></i></a>
+          <a href="#"><i class="far fa-play-circle"></i></a>
+          <a href="#"><i class="fas fa-step-forward"></i></a>
+          <a href="#"><i class="fas fa-redo"></i></a>
+        </div>
+
+        <div class="timer">
+          <span>0:25</span>
+          <div class="barra">
+            <div class="current">
+              <i class="fas fa-circle"></i>
+            </div>
+          </div>
+          <span>4:35</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="controlli-right">
+      <a href="#"><i class="fas fa-list-ul"></i></a>
+      <a href="#"><i class="fas fa-desktop"></i></a>
+      <a href="#"><i class="fas fa-volume-up"></i></a>
+      <div id="audio">
+        <div class="barra">
+          <div class="current">
+            <i class="fas fa-circle"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 </body>
 
 </html>
